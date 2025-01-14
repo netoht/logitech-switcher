@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "project-py"
+version = "0.1.0"
+description = ""
+authors = ["Waldinar Neto <netoht@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hidapi = "^0.14.0.post4"
+hid = "^1.0.6"
+pytest = "^8.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "project_py.main:main"
